@@ -1,0 +1,10 @@
+applications:
+- name: jobapp
+  path: jobapp
+  memory: 64MB
+  buildpacks:
+    - nodejs_buildpack
+  random-route: true
+  services:
+    - jobuaa
+    - jobdev-instance
